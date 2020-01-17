@@ -15,10 +15,16 @@
         ],
         "types": [],
         "noEmit": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "jsx": "react",
+        "paths": {
+            "@vizceral-react": [
+                "vizceral-react"
+            ]
+        }
     },
     "files": [
         "index.d.ts",
-        "vivus-tests.ts"
+        "vizceral-react-tests.tsx"
     ]
 }

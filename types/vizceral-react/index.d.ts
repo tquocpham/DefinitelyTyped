@@ -1,6 +1,6 @@
 // Type definitions for Netflix Vizceral-React
-// Project: 
-// Definitions by: Timmon Pham <>
+// Project: https://github.com/Netflix/vizceral-react
+// Definitions by: Timmon Pham <https://github.com/tquocpham>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 import * as React from 'react';

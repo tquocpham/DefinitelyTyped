@@ -3,7 +3,9 @@
 // Definitions by: Timmon Pham <https://github.com/tquocpham>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-import * as React from 'react';
+import {
+    Component
+} from 'react';
 
 export interface VizceralMetrics {
     readonly normal: number
@@ -60,7 +62,7 @@ export interface VizceralProps {
 export interface VizceralState {
 }
 
-export default class Vizceral extends React.Component<VizceralProps, VizceralState> {
+export default class Vizceral extends Component<VizceralProps, VizceralState> {
     constructor(props: VizceralProps);
     animationEnd: () => void;
     render(): JSX.Element;

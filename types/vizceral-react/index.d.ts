@@ -6,56 +6,57 @@
 import * as React from 'react';
 
 export interface VizceralMetrics {
-    normal: number
-    danger?: number
-    warning?: number
+    readonly normal: number
+    readonly danger?: number
+    readonly warning?: number
 }
 
 export interface VizceralConnection {
-    source: string
-    target: string
-    metadata?: object
-    metrics?: VizceralMetrics
-    notices?: any[]
-    class?: 'normal'
+    readonly source: string
+    readonly target: string
+    readonly metadata?: object
+    readonly metrics?: VizceralMetrics
+    readonly notices?: any[]
+    readonly class?: 'normal'
 }
 
 export interface VizceralNode {
-    name: string
-    renderer: 'global' | 'region' | 'focusedChild'
-    displayName?: string
-    node_type?: 'service' | 'storage' | 'user'
-    updated?: number
-    nodes?: VizceralNode[]
-    metadata?: object
-    class?: string
-    connections?: VizceralConnection[]
-    maxVolume?: number
-    props?: object
-    serverUpdateTime?: number
+    readonly name: string
+    readonly renderer: 'global' | 'region' | 'focusedChild'
+    readonly displayName?: string
+    readonly node_type?: 'service' | 'storage' | 'user'
+    readonly updated?: number
+    readonly nodes?: VizceralNode[]
+    readonly metadata?: object
+    readonly class?: string
+    readonly connections?: VizceralConnection[]
+    readonly maxVolume?: number
+    readonly props?: object
+    readonly serverUpdateTime?: number
 }
 
 export interface VizceralProps {
-    traffic: object
-    targetFramerate?: any
-    styles?: any
-    viewChanged?: any
-    objectHighlighted?: any
-    objectHovered?: any
-    nodeUpdated?: any
-    nodeContextSizeChanged?: any
-    matchesFound?: any
-    viewUpdated?: any
-    allowDraggingOfNodes?: boolean
-    showLabels?: any
-    filters?: any
-    definitions?: any
-    view?: any
-    connectionHighlighted?: () => void
-    match?: string
-    nodeHighlighted?: () => void
-    objectToHighlight?: any
+    readonly traffic: object
+    readonly targetFramerate?: any
+    readonly styles?: any
+    readonly viewChanged?: any
+    readonly objectHighlighted?: any
+    readonly objectHovered?: any
+    readonly nodeUpdated?: any
+    readonly nodeContextSizeChanged?: any
+    readonly matchesFound?: any
+    readonly viewUpdated?: any
+    readonly allowDraggingOfNodes?: boolean
+    readonly showLabels?: any
+    readonly filters?: any
+    readonly definitions?: any
+    readonly view?: any
+    readonly connectionHighlighted?: () => void
+    readonly match?: string
+    readonly nodeHighlighted?: () => void
+    readonly objectToHighlight?: any
 }
+
 export interface VizceralState {
 }
 

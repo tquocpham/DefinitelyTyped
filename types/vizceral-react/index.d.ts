@@ -4,7 +4,8 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 import {
-    Component
+    Component,
+    FC
 } from 'react';
 
 export interface VizceralMetrics {
@@ -59,11 +60,6 @@ export interface VizceralProps {
     readonly objectToHighlight?: any
 }
 
-export interface VizceralState {
-}
+export const Vizceral: (props: VizceralProps) => FC<VizceralProps>
 
-export default class Vizceral extends Component<VizceralProps, VizceralState> {
-    constructor(props: VizceralProps);
-    animationEnd: () => void;
-    render(): JSX.Element;
-}
+export default Vizceral

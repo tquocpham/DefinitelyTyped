@@ -1,8 +1,10 @@
-import * as React from 'react'
-import Vizceral from "vizceral-react";
+import Vizceral from '.'
 
 declare const container: Element;
 
 const TestVisceral = (
-    <Vizceral traffic={{}} />
+    <Vizceral traffic={{
+        name: 'test',
+        render: 'focusedChild',
+    }} />
 )
